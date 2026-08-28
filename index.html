@@ -22,6 +22,12 @@
 @keyframes mssmRecruiterScroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 8px))}}
 @media (max-width:700px){.mssm-recruiter-card{width:190px;height:112px;flex-basis:190px}.mssm-logo-track{gap:12px;animation-duration:26s}.mssm-logo-carousel:before,.mssm-logo-carousel:after{width:40px}}
 @media (prefers-reduced-motion:reduce){.mssm-logo-track{animation:none}}
+/* Remove placeholder labels from real MSSM photos */
+.placeholder-img::before,
+.placeholder-img::after {
+  content: none !important;
+  display: none !important;
+}
 </style>
 </head><body>
 <div class="topbar"><div class="container"><span>Meenakshi Sundararajan School of Management</span><span>University of Madras Affiliated • AICTE Approved</span></div></div>
